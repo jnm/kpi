@@ -14,6 +14,24 @@ updates:
           - "*"
     open-pull-requests-limit: 5
 
+  - package-ecosystem: "pip"
+    directory: "/dependencies/pip"
+    schedule:
+      # dependabot doesn't support cron
+      interval: "daily"
+    labels:
+      - "dependencies"
+      - "Back end"
+    groups:
+      minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+    # Turn off dependabot pull requests
+    open-pull-requests-limit: 0
+
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
