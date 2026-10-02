@@ -165,7 +165,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.4.1",
-    "moment": "^2.30.1",
+    "moment": "^2.31.0",
     "msw": "^2.11.3",
     "msw-storybook-addon": "^2.0.7",
     "orval": "^7.21.0",
